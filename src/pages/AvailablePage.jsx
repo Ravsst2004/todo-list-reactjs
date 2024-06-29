@@ -1,4 +1,4 @@
-const AddPage = () => {
+const AvailablePage = () => {
   return (
     <div className="px-4">
       <h1>Add Page</h1>
@@ -6,4 +6,4 @@ const AddPage = () => {
   );
 };
 
-export default AddPage;
+export default AvailablePage;

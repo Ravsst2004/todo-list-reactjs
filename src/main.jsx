@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Navbar from "./components/layouts/Navbar.jsx";
 import HomePage from "./pages/HomePage.jsx";
-import AddPage from "./pages/AddPage.jsx";
+import AvailablePage from "./pages/AvailablePage.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage.jsx";
@@ -13,8 +13,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/add",
-    element: <AddPage />,
+    path: "/available",
+    element: <AvailablePage />,
   },
 ]);
 

@@ -14,12 +14,12 @@ const Navbar = () => {
           Todo
         </a>
         <a
-          href="/add"
+          href="/available"
           className={`${
-            currentPage === "/add" ? "underline text-second" : ""
+            currentPage === "/available" ? "underline text-second" : ""
           } underline-offset-2 decoration-2 decoration-second `}
         >
-          Add
+          Available
         </a>
       </div>
     </nav>
