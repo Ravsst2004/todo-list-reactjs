@@ -28,13 +28,13 @@ const FormAddTodos = () => {
       <form action="" className="my-1">
         <textarea
           type="text"
-          className="w-full border-2 p-2 border-first rounded"
+          className="w-full border-2 p-2 border-blue-200 focus:outline-none focus:ring focus:ring-blue-200 rounded"
           onChange={(e) => setTitle(e.target.value)}
           required
         ></textarea>
         <button
           type="submit"
-          className="border-2 px-2 w-full border-first bg-second text-slate-100 rounded"
+          className="px-2 py-1 w-full bg-blue-500 text-slate-100 rounded font-medium"
           onClick={handleSubmit}
         >
           Add

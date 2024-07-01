@@ -1,37 +1,23 @@
 {
   "todos": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Todo 1",
       "completed": false
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Todo 2",
       "completed": false
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Todo 3",
       "completed": false
     },
     {
-      "id": "beaf"
-    },
-    {
-      "id": "3946",
-      "title": "321",
-      "completed": false
-    },
-    {
-      "id": "1d3d",
-      "title": "dsad",
-      "completed": false
-    },
-    {
-      "id": "178a",
-      "title": "dasda",
-      "completed": false
+      "id": "27ce",
+      "title": ""
     }
   ]
 }
