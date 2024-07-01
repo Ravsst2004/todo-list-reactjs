@@ -6,8 +6,6 @@ const FormAddTodos = () => {
   const [title, setTitle] = useState("");
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
     const todo = { title };
 
     try {
@@ -18,6 +16,8 @@ const FormAddTodos = () => {
           headers: { "Content-Type": "application/json" },
         }
       );
+
+      setTitle("");
     } catch (error) {
       console.log(error);
     }
@@ -25,7 +25,7 @@ const FormAddTodos = () => {
 
   return (
     <div>
-      <form action="" className="my-1">
+      <form action="/" className="my-1" onSubmit={handleSubmit}>
         <textarea
           type="text"
           className="w-full border-2 p-2 border-blue-200 focus:outline-none focus:ring focus:ring-blue-200 rounded"
@@ -35,7 +35,6 @@ const FormAddTodos = () => {
         <button
           type="submit"
           className="px-2 py-1 w-full bg-blue-500 text-slate-100 rounded font-medium"
-          onClick={handleSubmit}
         >
           Add
         </button>

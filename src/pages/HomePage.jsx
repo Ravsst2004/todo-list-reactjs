@@ -5,7 +5,6 @@ import TodoList from "../components/TodoList";
 
 const HomePage = () => {
   const { data: todos } = useFetch("http://localhost:8000/todos");
-  // console.log(datas);
 
   return (
     <div className="px-4">
