@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import axios from "axios";
 import { useState } from "react";
 
-const FormAddTodos = () => {
+const FormAddTodos = ({ onAddTodo }) => {
   const [title, setTitle] = useState("");
 
   const handleSubmit = async (e) => {
@@ -18,6 +19,7 @@ const FormAddTodos = () => {
       );
 
       setTitle("");
+      onAddTodo();
     } catch (error) {
       console.log(error);
     }
@@ -30,6 +32,7 @@ const FormAddTodos = () => {
           type="text"
           className="w-full border-2 p-2 border-blue-200 focus:outline-none focus:ring focus:ring-blue-200 rounded"
           onChange={(e) => setTitle(e.target.value)}
+          value={title}
           required
         ></textarea>
         <button
