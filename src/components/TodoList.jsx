@@ -1,8 +1,6 @@
-/* eslint-disable react/prop-types */
 import axios from "axios";
 import Trash from "../assets/svg/trash.svg";
 import { useNavigate } from "react-router-dom";
-// import { useState } from "react";
 
 const TodoList = ({ title, id }) => {
   const navigate = useNavigate();
@@ -18,7 +16,7 @@ const TodoList = ({ title, id }) => {
       console.log(error);
     }
   };
-
+ 
   return (
     <div>
       <div className="flex gap-x-4 cursor-pointer my-1 justify-between">
